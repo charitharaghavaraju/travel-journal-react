@@ -1,19 +1,52 @@
-# Getting Started
-Install the dependencies and run the project
-```
+# My Travel Journal 🌍
+
+A simple React app that displays a personal travel journal — a list of trip entries, each with a photo, country, dates, a Google Maps link, and a short description.
+
+## Features
+
+- Renders a list of journal entries from static data (`data.js`)
+- Each entry shows a main image, title, country, trip dates, description, and a link to view the location on Google Maps
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+
+## Getting Started
+
+### Installation
+
+```bash
 npm install
-npm start
 ```
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+### Run the dev server
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+```bash
+npm run dev
+```
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+### Build for production
 
-Happy Coding!
+```bash
+npm run build
+```
+
+### Preview the production build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+├── components/
+│   ├── Header.jsx    # Page title and icon
+│   └── Entry.jsx      # Single journal entry card
+├── data.js             # Journal entry data
+├── App.jsx              # Renders the list of entries
+├── index.jsx              # React entry point
+├── index.html
+└── index.css
+```
